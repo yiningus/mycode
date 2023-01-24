@@ -8,7 +8,9 @@ answer = " "
 while round < 3 and answer != "Brian":
     round += 1     # increase the round counter by 1
     answer = input('Finish the movie title, "Monty Python\'s The Life of ______": ')
-    if answer.lower() == "brian": # logic to check if user gave correct answer
+    answer = answer.capitalize() # this line inserted to line 8 will make all 
+                                 # user input starts with an uppercase
+    if answer == "Brian": # logic to check if user gave correct answer
         print("Correct!")
     elif answer == "Shrubbery":
         print("You gave the super secret answer!")
